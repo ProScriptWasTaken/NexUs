@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NEXUS STORE — Library</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <a class="logo" href="index.html">NEX<span>US</span></a>
+    <div class="nav-links">
+      <a class="nav-btn" href="index.html">STORE</a>
+      <a class="nav-btn" href="cart.html">CART</a>
+      <a class="nav-btn active" href="library.html">LIBRARY</a>
+    </div>
+    <div class="nav-right">
+      <div class="balance-display" id="balanceDisplay">💰 $100.00</div>
+      <a class="cart-btn" href="cart.html">🛒 CART <span class="cart-count" id="cartCount">0</span></a>
+    </div>
+  </nav>
+
+  <div class="page-wrap">
+    <div class="page-header">LIBRARY <span id="libraryTitle">// 0 GAMES</span></div>
+
+    <div class="library-stats">
+      <div class="stat-card">
+        <div class="stat-num" id="libCount">0</div>
+        <div class="stat-label">GAMES OWNED</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num" id="libSpent">$0</div>
+        <div class="stat-label">TOTAL SPENT</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num" id="libBalance">$100</div>
+        <div class="stat-label">BALANCE</div>
+      </div>
+    </div>
+
+    <div class="library-grid" id="libraryGrid"></div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
+  <script>initLibraryPage();</script>
+</body>
+</html>
