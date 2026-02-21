@@ -249,7 +249,7 @@ function initCartPage() {
     document.getElementById('cartTitle').textContent = '// ' + count + ' ITEM' + (count !== 1 ? 'S' : '');
 
     if (count === 0) {
-      itemsEl.innerHTML = '<div class="empty-state"><div class="empty-icon">🛒</div><h3>YOUR CART IS EMPTY</h3><p>Head to the <a href="index.html">store</a> to find your next adventure</p></div>';
+      itemsEl.innerHTML = '<div class="empty-state"><div class="empty-icon">🛒</div><h3>YOUR CART IS EMPTY</h3><p>Head to the <a href="store.html">store</a> to find your next adventure</p></div>';
       document.getElementById('checkoutBtn').disabled = true;
     } else {
       itemsEl.innerHTML = s.cart.map(function(g) {
@@ -309,7 +309,7 @@ function initLibraryPage() {
     document.getElementById('libBalance').textContent = '$' + s.balance.toFixed(0);
 
     if (count === 0) {
-      grid.innerHTML = '<div class="empty-state" style="grid-column:1/-1"><div class="empty-icon">🎮</div><h3>LIBRARY EMPTY</h3><p>Purchase games from the <a href="index.html">store</a> to build your collection</p></div>';
+      grid.innerHTML = '<div class="empty-state" style="grid-column:1/-1"><div class="empty-icon">🎮</div><h3>LIBRARY EMPTY</h3><p>Purchase games from the <a href="store.html">store</a> to build your collection</p></div>';
     } else {
       grid.innerHTML = s.library.map(function(g, i) {
         return '<div class="library-card" style="animation-delay:' + (i*0.05) + 's">' +
