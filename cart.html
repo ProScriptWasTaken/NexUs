@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NEXUS STORE — Cart</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <a class="logo" href="index.html">NEX<span>US</span></a>
+    <div class="nav-links">
+      <a class="nav-btn" href="index.html">STORE</a>
+      <a class="nav-btn active" href="cart.html">CART</a>
+      <a class="nav-btn" href="library.html">LIBRARY</a>
+    </div>
+    <div class="nav-right">
+      <div class="balance-display" id="balanceDisplay">💰 $100.00</div>
+      <a class="cart-btn" href="cart.html">🛒 CART <span class="cart-count" id="cartCount">0</span></a>
+    </div>
+  </nav>
+
+  <div class="page-wrap">
+    <div class="page-header">CART <span id="cartTitle">// 0 ITEMS</span></div>
+
+    <div class="cart-container">
+      <div class="cart-items" id="cartItems"></div>
+
+      <div class="order-summary">
+        <div class="summary-title">ORDER SUMMARY</div>
+        <div class="summary-row"><span>Subtotal</span><span id="cartSubtotal">$0.00</span></div>
+        <div class="summary-row"><span>Discount</span><span style="color:#00ff88">$0.00</span></div>
+        <div class="summary-row total"><span>TOTAL</span><span id="cartTotal">$0.00</span></div>
+        <div class="balance-row"><span>Your Balance</span><span id="cartBalance">$100.00</span></div>
+        <button class="checkout-btn" id="checkoutBtn" disabled>⚡ PURCHASE NOW</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
+  <script>initCartPage();</script>
+</body>
+</html>
